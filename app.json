@@ -1,50 +1,60 @@
 {
-  "expo": {
-    "name": "RN404Challenge",
-    "slug": "RN404Challenge",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.dbracamonte.RN404Challenge"
-    },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true
-    },
-    "extra": {
-      "router": {
-        "origin": false
-      },
-      "eas": {
-        "projectId": "e84d4f67-fcfb-4be9-9ef8-61b05ef1c7d7"
-      }
-    }
-  }
+	"expo": {
+		"name": "RN404Challenge",
+		"slug": "RN404Challenge",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/images/icon.png",
+		"scheme": "myapp",
+		"userInterfaceStyle": "automatic",
+		"newArchEnabled": true,
+		"ios": {
+			"supportsTablet": true,
+			"icon": {
+				"dark": "./assets/icons/ios-dark.png",
+				"light": "./assets/icons/ios-light.png",
+				"tinted": "./assets/icons/ios-tinted.png"
+			}
+		},
+		"android": { 
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/icons/adaptive-icon.png",
+				"monochromeImage": "./assets/icons/adaptive-icon.png",
+				"backgroundColor": "#ffffff"
+			},
+			"package": "com.dbracamonte.RN404Challenge"
+		},
+		"web": {
+			"bundler": "metro",
+			"output": "static",
+			"favicon": "./assets/images/favicon.png"
+		},
+		"plugins": [
+			"expo-router",
+			[
+				"expo-splash-screen",
+				{
+					"image": "./assets/icons/splash-icon-dark.png",
+					"imageWidth": 200,
+					"resizeMode": "contain",
+					"backgroundColor": "#fafafa",
+          "dark": {
+            "image": "./assets/icons/splash-icon-light.png",
+            "backgroundColor": "#1c1c1c"
+          }
+				}
+			]
+		],
+		"experiments": {
+			"typedRoutes": true
+		},
+		"extra": {
+			"router": {
+				"origin": false
+			},
+			"eas": {
+				"projectId": "e84d4f67-fcfb-4be9-9ef8-61b05ef1c7d7"
+			}
+		}
+	}
 }
